@@ -1,20 +1,46 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "pretty": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "importHelpers": true,
     "target": "es2015",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "declaration": false,
     "module": "es2020",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": [
+        "app/core/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@features/*": [
+        "app/features/*"
+      ],
+      "@testing/*": [
+        "app/testing/*"
+      ],
+    }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true,
+    "fullTemplateTypeCheck": true
   }
 }

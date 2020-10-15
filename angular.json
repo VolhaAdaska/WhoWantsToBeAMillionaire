@@ -7,12 +7,14 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "changeDetection": "OnPush",
+          "displayBlock": true
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "wwtbm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -30,7 +32,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./styles"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -45,8 +52,9 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
+              "aot": true,
+              "extractLicenses": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -59,7 +67,8 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "tsConfig": "./tsconfig.app.prod.json"
             }
           }
         },
@@ -72,12 +81,6 @@
             "production": {
               "browserTarget": "wwtbm:build:production"
             }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "wwtbm:build"
           }
         },
         "test": {
@@ -94,7 +97,20 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./styles"
+              ]
+            },
+            "scripts": [],
+            "codeCoverageExclude": [
+              "src/polyfills.ts",
+              "src/test.ts",
+              "src/**/testing/**",
+              "src/**/models/**",
+              "src/**/**/*.module.ts",
+              "src/**/**/index.ts"
+            ]
           }
         },
         "lint": {
@@ -102,27 +118,18 @@
           "options": {
             "tsConfig": [
               "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "wwtbm:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "wwtbm:serve:production"
-            }
-          }
         }
       }
-    }},
-  "defaultProject": "wwtbm"
+    }
+  },
+  "defaultProject": "wwtbm",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -55,6 +55,7 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
+// tslint:disable-next-line: tir-newline-after-import
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 
