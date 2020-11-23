@@ -202,12 +202,14 @@
       true,
       "attribute",
       "ep",
+      "wwtbm",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
       "ep",
+      "wwtbm",
       "kebab-case"
     ],
     "no-output-on-prefix": true,

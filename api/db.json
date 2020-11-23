@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Olga",
+      "LastName": "Adasko",
+      "email": "v.adaska@godeltech.com",
+      "password": "v.adaska@godeltech.com",
+      "score": 1000000
+    }
+  ]
+}
