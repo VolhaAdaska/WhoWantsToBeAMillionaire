@@ -6,19 +6,18 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          routerLink="/home"
+          routerLink="/{{homeRouterLink}}"
         >
           Who wants to be a millionaire
         </a>
       </li>
       <ng-template
-        [ngIf]="!isLoggedIn"
-        [ngIfElse]="loggedOut"
+        *ngIf="!isLoggedIn; else loggedOut"
       >
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/login"
+            routerLink="/{{loginRouterLink}}"
           >
             Login
           </a>
@@ -26,7 +25,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/register"
+            routerLink="/{{registerRouterLink}}"
           >
             Register
           </a>
@@ -36,7 +35,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/top-users"
+            routerLink="/{{topUserRouterLink}}"
           >
             Top list
           </a>
@@ -44,14 +43,14 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/game"
+            routerLink="/{{gameRouterLink}}"
           >
             Game
           </a>
         </li>
         <a
           class="nav-item nav-link"
-          routerLink="/home"
+          routerLink="/{{homeRouterLink}}"
           (click)="logout()"
         >
           Logout

@@ -9,7 +9,7 @@ import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
 import { FeatureModule } from '@features/feature.module';
 
-import { ROUTE_NAMES, routeNamesObjFactory } from '@shared/routes/route-names';
+import { ROUTE_NAMES, ROUTE_NAMES_OBJ_FACTORY } from '@shared/routes/route-names';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { ROUTE_NAMES, routeNamesObjFactory } from '@shared/routes/route-names';
   providers: [
     {
       provide: ROUTE_NAMES,
-      useFactory: routeNamesObjFactory,
+      useFactory: ROUTE_NAMES_OBJ_FACTORY,
     },
   ],
   bootstrap: [AppComponent],

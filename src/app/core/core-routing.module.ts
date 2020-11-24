@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { routeNamesObjFactory } from '@shared/routes/route-names';
+
+import { ROUTE_NAMES_OBJ_FACTORY } from '@shared/routes/route-names';
 
 
-const routeNames = routeNamesObjFactory();
+const routeNames = ROUTE_NAMES_OBJ_FACTORY();
 const routes: Routes = [
   {
     path: routeNames.login,
@@ -15,6 +16,10 @@ const routes: Routes = [
     path: routeNames.register,
     loadChildren: () => import('@core/auth/register/register.module')
     .then(m => m.RegisterModule),
+  },
+  { path: routeNames.pageNotFound,
+    loadChildren: () => import('@core/page-not-found/page-not-found.module')
+    .then(m => m.PageNotFoundModule),
   },
 ];
 

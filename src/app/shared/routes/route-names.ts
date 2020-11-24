@@ -5,7 +5,7 @@ import { IRouteNames } from '@shared/routes/common.interface';
 
 export const ROUTE_NAMES = new InjectionToken<IRouteNames>('ROUTE_NAMES');
 
-export function routeNamesObjFactory(): IRouteNames {
+export function ROUTE_NAMES_OBJ_FACTORY(): IRouteNames {
   return {
     login: 'login',
     register: 'register',

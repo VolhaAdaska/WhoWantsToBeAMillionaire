@@ -1,4 +1,5 @@
 export class User {
+
   public static from(value: IUser): User {
     return new User(value.firstName,
       value.lastName,

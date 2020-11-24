@@ -29,4 +29,24 @@ export class AppComponent {
     return this._authService.isLoggedIn();
   }
 
+  public get registerRouterLink(): string {
+    return this._routeNames.register;
+  }
+
+  public get loginRouterLink(): string {
+    return this._routeNames.register;
+  }
+
+  public get topUserRouterLink(): string {
+    return this._routeNames.topUsers;
+  }
+
+  public get gameRouterLink(): string {
+    return this._routeNames.game;
+  }
+
+  public get homeRouterLink(): string {
+    return this._routeNames.home;
+  }
+
 }
