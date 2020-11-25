@@ -1,0 +1,67 @@
+<!-- nav -->
+
+<div class="container-fluid full-height">
+  <div class="row full-height">
+    <ul class="nav">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/{{homeRouterLink}}"
+        >
+          Who wants to be a millionaire
+        </a>
+      </li>
+      <ng-template
+        *ngIf="!isLoggedIn; else loggedOut"
+      >
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/{{loginRouterLink}}"
+          >
+            Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/{{registerRouterLink}}"
+          >
+            Register
+          </a>
+        </li>
+      </ng-template>
+      <ng-template #loggedOut>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/{{topUserRouterLink}}"
+          >
+            Top list
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/{{gameRouterLink}}"
+          >
+            Game
+          </a>
+        </li>
+        <a
+          class="nav-item nav-link"
+          routerLink="/{{homeRouterLink}}"
+          (click)="logout()"
+        >
+          Logout
+        </a>
+      </ng-template>
+    </ul>
+    <main
+      role="main"
+      class="col-md-9 ml-sm-auto col-lg-10 px-4 full-height"
+    >
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
