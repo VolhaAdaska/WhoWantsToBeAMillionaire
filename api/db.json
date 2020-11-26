@@ -3,10 +3,26 @@
     {
       "id": 1,
       "firstName": "Olga",
-      "LastName": "Adasko",
+      "lastName": "Adasko",
       "email": "v.adaska@godeltech.com",
       "password": "v.adaska@godeltech.com",
       "score": 1000000
+    },
+    {
+      "id": 2,
+      "firstName": "Elena",
+      "lastName": "Solonina",
+      "email": "e.solonina@godeltech.com",
+      "password": "e.solonina@godeltech.com",
+      "score": 500000
+    },
+    {
+      "id": 3,
+      "firstName": "Harry",
+      "lastName": "Potter",
+      "email": "h.potter@godeltech.com",
+      "password": "h.potter@godeltech.com",
+      "score": 500000
     }
   ]
 }
