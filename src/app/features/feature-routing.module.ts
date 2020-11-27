@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { GameComponent } from '@features/game/game.component';
-import { HomeComponent } from '@features/home/home.component';
 
 import { ROUTE_NAMES_OBJ_FACTORY } from '@shared/routes/route-names';
 
@@ -14,8 +13,16 @@ const routes: Routes = [
     loadChildren: () => import('@features/top-users/top-users.module')
     .then(m => m.TopUsersModule),
   },
-  { path: routeNames.game, component: GameComponent },
-  { path: routeNames.home, component: HomeComponent },
+  {
+    path: routeNames.home,
+    loadChildren: () => import('@features/home/home.module')
+    .then(m => m.HomeModule),
+  },
+  {
+    path: routeNames.home,
+    loadChildren: () => import('@features/game/game.module')
+    .then(m => m.GameModule),
+  },
 ];
 
 @NgModule({

@@ -3,28 +3,25 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { UserService } from '@features/services/user.service';
+import { GameComponent } from '@features/game/game.component';
 
-import { FeatureRoutingModule } from '@features/feature-routing.module';
-import { HomeModule } from '@features/home/home.module';
-import { GameModule } from '@features/game/game.module';
+import { GameRoutingModule } from '@features/game/game-routing.module';
 
 import { NgStackFormsModule } from '@ng-stack/forms';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    GameComponent,
+  ],
   imports: [
     HttpClientModule,
     ReactiveFormsModule,
     NgStackFormsModule,
     CommonModule,
-    FeatureRoutingModule,
-    HomeModule,
-    GameModule,
+    GameRoutingModule,
   ],
   providers: [
-    UserService,
   ],
 })
-export class FeatureModule { }
+export class GameModule { }

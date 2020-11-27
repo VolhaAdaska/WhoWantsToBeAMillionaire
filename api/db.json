@@ -24,5 +24,481 @@
       "password": "h.potter@godeltech.com",
       "score": 500000
     }
+  ],
+  "rang1": [
+    {
+      "id": 1,
+      "title": "What is 1+1?",
+      "answers": [
+        {
+          "answer": "1",
+          "isCorrect": false
+        },
+        {
+          "answer": "2",
+          "isCorrect": true
+        },
+        {
+          "answer": "3",
+          "isCorrect": false
+        },
+        {
+          "answer": "4",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "What color is Pikachu?",
+      "answers": [
+        {
+          "answer": "Yellow",
+          "isCorrect": true
+        },
+        {
+          "answer": "Green",
+          "isCorrect": false
+        },
+        {
+          "answer": "Blue",
+          "isCorrect": false
+        },
+        {
+          "answer": "Red",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The seat of the Church of England is in which city?",
+      "answers": [
+        {
+          "answer": "London",
+          "isCorrect": false
+        },
+        {
+          "answer": "Salisbury",
+          "isCorrect": false
+        },
+        {
+          "answer": "Canterbury",
+          "isCorrect": true
+        },
+        {
+          "answer": "Oxford",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "rang2": [
+    {
+      "id": 1,
+      "title": "The capital of France is what?",
+      "answers": [
+        {
+          "answer": "Bourges",
+          "isCorrect": false
+        },
+        {
+          "answer": "Nantes",
+          "isCorrect": false
+        },
+        {
+          "answer": "Strasbourg",
+          "isCorrect": false
+        },
+        {
+          "answer": "Paris",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Big Apple is the nickname for which U.S city?",
+      "answers": [
+        {
+          "answer": "San Francisco",
+          "isCorrect": false
+        },
+        {
+          "answer": "New York",
+          "isCorrect": true
+        },
+        {
+          "answer": "Indianapolis",
+          "isCorrect": false
+        },
+        {
+          "answer": "Miami",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "In old English times, what branch of Christianity did a Papist belong to?",
+      "answers": [
+        {
+          "answer": "Presbyterian",
+          "isCorrect": false
+        },
+        {
+          "answer": "Methodist",
+          "isCorrect": false
+        },
+        {
+          "answer": "Roman Catholic",
+          "isCorrect": true
+        },
+        {
+          "answer": "Eastern Orthodox",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "rang3": [
+    {
+      "id": 1,
+      "title": "The novel 'Cry, the Beloved Country' is set in which country?",
+      "answers": [
+        {
+          "answer": "Russia",
+          "isCorrect": false
+        },
+        {
+          "answer": "Mexico",
+          "isCorrect": false
+        },
+        {
+          "answer": "Argentina",
+          "isCorrect": false
+        },
+        {
+          "answer": "South Africa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Which of the following Windows games uses playing cards as a central part of its gameplay?",
+      "answers": [
+        {
+          "answer": "Minesweeper",
+          "isCorrect": false
+        },
+        {
+          "answer": "Pinball",
+          "isCorrect": false
+        },
+        {
+          "answer": "Solitaire",
+          "isCorrect": true
+        },
+        {
+          "answer": "Console Wars: Revenge of the Macs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "In which of the following films does Jackie Chan portray police officer Kevin Chan?",
+      "answers": [
+        {
+          "answer": "Shanghai Noon",
+          "isCorrect": false
+        },
+        {
+          "answer": "The Spy Next Door",
+          "isCorrect": false
+        },
+        {
+          "answer": "The Foreigner",
+          "isCorrect": false
+        },
+        {
+          "answer": "Police Story",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "rang4": [
+    {
+      "id": 1,
+      "title": "Which of these Yu-Gi-Oh cards do not have an attack level of exactly 2300?",
+      "answers": [
+        {
+          "answer": "Gaia The Fierce Knight",
+          "isCorrect": false
+        },
+        {
+          "answer": "Ryu Ran",
+          "isCorrect": true
+        },
+        {
+          "answer": "Goblin Attack Force",
+          "isCorrect": false
+        },
+        {
+          "answer": "Freed The Matchless General",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Love Live's idol group shares its name with the symbol to measure what mathematical quantity?",
+      "answers": [
+        {
+          "answer": "Mean",
+          "isCorrect": true
+        },
+        {
+          "answer": "Variance",
+          "isCorrect": false
+        },
+        {
+          "answer": "Summation",
+          "isCorrect": false
+        },
+        {
+          "answer": "Standard deviation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Which composer wrote the music for the coronation of French monarch Charles X at Reims, in 1820",
+      "answers": [
+        {
+          "answer": "Ludwig Van Beethoven",
+          "isCorrect": false
+        },
+        {
+          "answer": "Luigi Cherubini",
+          "isCorrect": true
+        },
+        {
+          "answer": "Hector Berlioz",
+          "isCorrect": false
+        },
+        {
+          "answer": "Christoph Gluck",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "rang5": [
+    {
+      "id": 1,
+      "title": "How many hours are there in a day?",
+      "answers": [
+        {
+          "answer": "6",
+          "isCorrect": false
+        },
+        {
+          "answer": "12",
+          "isCorrect": false
+        },
+        {
+          "answer": "24",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not enough",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "In the anime series 'Sonic X', how many Chaos Emeralds are there?",
+      "answers": [
+        {
+          "answer": "5",
+          "isCorrect": false
+        },
+        {
+          "answer": "6",
+          "isCorrect": false
+        },
+        {
+          "answer": "7",
+          "isCorrect": true
+        },
+        {
+          "answer": "8",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Iconic Fate series character Saber is who?",
+      "answers": [
+        {
+          "answer": "King Arthur",
+          "isCorrect": true
+        },
+        {
+          "answer": "King John",
+          "isCorrect": false
+        },
+        {
+          "answer": "King Richard",
+          "isCorrect": false
+        },
+        {
+          "answer": "King Henry",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "rang6": [
+    {
+      "id": 1,
+      "title": "In which Japanese city do you find the district of Akihabara, home to a large selection of anime and manga merchandise?",
+      "answers": [
+        {
+          "answer": "Osaka",
+          "isCorrect": false
+        },
+        {
+          "answer": "Tokyo",
+          "isCorrect": true
+        },
+        {
+          "answer": "Fukuoka",
+          "isCorrect": false
+        },
+        {
+          "answer": "Kyoto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Which Italian city is synonymous with the person known as Girolamo Savonarola, who effectively governed it during the late 15th century?",
+      "answers": [
+        {
+          "answer": "Florence",
+          "isCorrect": true
+        },
+        {
+          "answer": "Naples",
+          "isCorrect": false
+        },
+        {
+          "answer": "Siena",
+          "isCorrect": false
+        },
+        {
+          "answer": "Milan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "After nitrogen and oxygen, what is the third most abundant gas in the air?",
+      "answers": [
+        {
+          "answer": "Xenon",
+          "isCorrect": false
+        },
+        {
+          "answer": "Argon",
+          "isCorrect": true
+        },
+        {
+          "answer": "Helium",
+          "isCorrect": false
+        },
+        {
+          "answer": "Neon",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "rang7": [
+    {
+      "id": 1,
+      "title": "Who wears glasses in the anime series Nichijou?",
+      "answers": [
+        {
+          "answer": "Mr. Sakamoto",
+          "isCorrect": false
+        },
+        {
+          "answer": "Mio",
+          "isCorrect": false
+        },
+        {
+          "answer": "Yuuko",
+          "isCorrect": false
+        },
+        {
+          "answer": "Mai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A number one followed by 100 zeros is commonly known by what name?",
+      "answers": [
+        {
+          "answer": "Googol",
+          "isCorrect": true
+        },
+        {
+          "answer": "Megatron",
+          "isCorrect": false
+        },
+        {
+          "answer": "Gigabit",
+          "isCorrect": false
+        },
+        {
+          "answer": "Nanomole",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "If you're watching a show whose English name is 'Coronation Street', which country would you most likely be in?",
+      "answers": [
+        {
+          "answer": "Belgium",
+          "isCorrect": false
+        },
+        {
+          "answer": "Canada",
+          "isCorrect": false
+        },
+        {
+          "answer": "United Kingdom",
+          "isCorrect": true
+        },
+        {
+          "answer": "Mexico",
+          "isCorrect": false
+        }
+      ]
+    }
   ]
 }
