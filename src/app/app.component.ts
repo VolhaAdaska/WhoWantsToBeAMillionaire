@@ -34,7 +34,7 @@ export class AppComponent {
   }
 
   public get loginRouterLink(): string {
-    return this._routeNames.register;
+    return this._routeNames.login;
   }
 
   public get topUserRouterLink(): string {
