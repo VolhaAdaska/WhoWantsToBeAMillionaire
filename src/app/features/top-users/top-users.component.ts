@@ -1,9 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy, OnDestroy, Input } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { Observable } from 'rxjs';
-import { take } from 'rxjs/operators';
 
-import { UserService } from '@features/services/user.service';
+import { UserService } from '@features/top-users/services/user.service';
 
 import { User } from '@shared/models/user';
 
