@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { UserService } from '@features/services/user.service';
+import { UserService } from '@features/top-users/services/user.service';
 
 import { FeatureRoutingModule } from '@features/feature-routing.module';
 import { HomeModule } from '@features/home/home.module';

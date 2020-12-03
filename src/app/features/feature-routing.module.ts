@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GameComponent } from '@features/game/game.component';
 
 import { ROUTE_NAMES_OBJ_FACTORY } from '@shared/routes/route-names';
 
@@ -19,7 +18,7 @@ const routes: Routes = [
     .then(m => m.HomeModule),
   },
   {
-    path: routeNames.home,
+    path: routeNames.game,
     loadChildren: () => import('@features/game/game.module')
     .then(m => m.GameModule),
   },

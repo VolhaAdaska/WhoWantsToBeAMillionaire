@@ -26,6 +26,10 @@ export class RegisterComponent implements OnInit {
 
   get password(): AbstractControl { return this.registerForm.controls.password; }
 
+  public get loginRouterLink(): string {
+    return this._routeNames.login;
+  }
+
   private _submitted = false;
   get submitted(): boolean { return this._submitted; }
 

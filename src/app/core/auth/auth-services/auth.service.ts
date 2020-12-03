@@ -6,21 +6,19 @@ import { map, take } from 'rxjs/operators';
 import { HttpService } from '@core/http/http-service/http-service';
 
 import { User, IUser, IForm } from '@shared/models/user';
+import { USERS_URL } from '@shared/routes/api.routes';
 
 
 @Injectable()
 export class AuthService {
 
-  private readonly _CURRENTUSER: string;
-  private _serverUrl = 'http://localhost:3000';
+  private readonly _CURRENTUSER: string = 'currentUser';
 
-  constructor(private _http: HttpService) {
-    this._CURRENTUSER = 'currentUser';
-  }
+  constructor(private _http: HttpService) {  }
 
   public login(email: string, password: string): Observable<User> | null {
 
-   return this._http.get<IUser[]>(this._serverUrl + `/users`)
+   return this._http.get<IUser[]>(USERS_URL)
      .pipe(map(response => {
       const data = response.find(x => x.email === email && x.password === password);
       if (data) {
@@ -37,12 +35,10 @@ export class AuthService {
   }
 
   public register(user: IForm): Promise<void> {
-   return this._http.post(this._serverUrl + `/users`, user).pipe(take(1)).toPromise() as unknown as Promise<void>;
+   return this._http.post(USERS_URL, user).pipe(take(1)).toPromise() as unknown as Promise<void>;
   }
 
   public isLoggedIn(): boolean {
     return localStorage.getItem(this._CURRENTUSER) !== null;
   }
 }
-
-
