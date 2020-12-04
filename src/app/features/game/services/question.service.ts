@@ -15,11 +15,16 @@ export class QuestionService {
   constructor(private _http: HttpService) {
   }
 
-  public getQuestion(rang: number): Observable<Question[]> | null {
+  public getQuestion(rang: number): Observable<Question> | null {
     return this._http.get<IQuestion[]>(RANG_URL + rang)
       .pipe(map(response => {
-        return response.map(element =>
+        const data =  response.map(element =>
           Question.from(element));
+          return data[this.getRandom(data.length)];
       }));
+  }
+
+  private getRandom(max: number): number {
+    return Math.floor(Math.random() * Math.floor(max));
   }
 }

@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { UserService } from '@features/top-users/services/user.service';
+import { QuestionService } from '@features/game/services/question.service';
 
 import { FeatureRoutingModule } from '@features/feature-routing.module';
 import { HomeModule } from '@features/home/home.module';
@@ -24,6 +25,7 @@ import { NgStackFormsModule } from '@ng-stack/forms';
     GameModule,
   ],
   providers: [
+    QuestionService,
     UserService,
   ],
 })
