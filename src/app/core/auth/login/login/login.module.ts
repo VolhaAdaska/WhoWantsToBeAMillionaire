@@ -9,8 +9,6 @@ import { AuthService } from '@core/auth/auth-services/auth.service';
 
 import { LoginRoutingModule } from '@core/auth/login/login/login-routing.module';
 
-import { NgStackFormsModule } from '@ng-stack/forms';
-
 
 @NgModule({
   declarations: [
@@ -19,7 +17,6 @@ import { NgStackFormsModule } from '@ng-stack/forms';
   imports: [
     HttpClientModule,
     ReactiveFormsModule,
-    NgStackFormsModule,
     CommonModule,
     LoginRoutingModule,
   ],

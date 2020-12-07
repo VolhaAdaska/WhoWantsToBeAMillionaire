@@ -1,0 +1,10 @@
+<div id="game">
+  <div id="question-box">{{question.title}}</div>
+  <div class="list-group" *ngFor="let item of question.answers; let i = index;">
+    <button
+      class="list-group-item list-group-item-action"
+      (click)="answerQuestion(item)"
+    >
+      {{i+1}}. {{item.answer}}
+    </button>
+</div>
